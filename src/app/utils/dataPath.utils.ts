@@ -10,6 +10,7 @@ export class DataPathUtils {
     console.log('pg.1*********3');
     if (!data || !dataPath) {
       if (attr) {
+        console.log('pg.1*********8',data[attr]);
         return data[attr];
       }
       console.log('pg.1*********4',data,dataPath);
