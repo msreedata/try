@@ -7,13 +7,10 @@ export class DataPathUtils {
   }
 
   public extractDataFromResponse(data, dataPath, attr = null) {
-    console.log('pg.1*********3');
     if (!data || !dataPath) {
       if (attr) {
-        console.log('pg.1*********8',data[attr]);
         return data[attr];
       }
-      console.log('pg.1*********4',data,dataPath);
       return data;
     }
 
@@ -25,16 +22,13 @@ export class DataPathUtils {
       if (typeof extractedData[prop] !== 'undefined') {
         extractedData = extractedData[prop];
       } else {
-        console.log('pg.1*********5',extractedData);
         return null;
       }
     }
 
     if (extractedData != null && attr) {
-      console.log('pg.1*********6',extractedData);
       return extractedData[attr];
     }
-    console.log('pg.1*********7',extractedData);
     return extractedData;
   }
 

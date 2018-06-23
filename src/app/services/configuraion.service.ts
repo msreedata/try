@@ -7,15 +7,14 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class ConfigurationService {
 
-    private readonly filePath: string = "./config.json";
+    private readonly filePath: string = "assets/config.json";
     private configuration;
     private configStream;
 
     constructor(private http: Http) {
         this.configuration = null;
-        this.configStream = this.http.get('assets/config.json').map(res => res.json());
-        //this.http.get(this.filePath).map(res => res.json());
-        console.log('pg.1*********2');
+        //this.configStream = this.http.get('assets/config.json').map(res => res.json());
+        this.configStream = this.http.get(this.filePath).map(res => res.json());
     }
 
     getConfiguration() {
