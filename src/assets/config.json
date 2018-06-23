@@ -49,7 +49,7 @@
         },
         "put": {
           "url": "https://:urlHost/api/v1/Foods/:Id",
-          "actualMethod": "dd",
+          "actualMethod": null,
           "fields": [
             {
               "name": "Name",
