@@ -77,7 +77,11 @@ export class GetComponent {
       this.loading = true;
 
       const requestHeaders = this.activeGetRequest.requestHeaders || this.pageData.requestHeaders || {};
-      this.requestsService.get(this.activeGetRequest.url, requestHeaders, queryParams || this.queryParams).subscribe(data => {
+
+      let getUrl = this.activeGetRequest.url;
+      getUrl = this.urlUtils.getParsedUrl(getUrl, null, null,this.pageData.urlHost);
+
+      this.requestsService.get(getUrl, requestHeaders, queryParams || this.queryParams).subscribe(data => {
         this.loading = false;
         this.data = this.dataPathUtils.extractDataFromResponse(data, this.activeGetRequest.dataPath);
 
