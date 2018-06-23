@@ -160,7 +160,7 @@ export class GetComponent {
       return;
     }
     const dataPath = deleteMethod.dataPath;
-    deleteUrl = this.urlUtils.getParsedUrl(deleteUrl, row, dataPath);
+    deleteUrl = this.urlUtils.getParsedUrl(deleteUrl, row, dataPath,this.pageData.urlHost);
 
     console.log('Delete url', deleteUrl);
 

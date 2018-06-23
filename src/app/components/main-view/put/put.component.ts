@@ -114,7 +114,7 @@ export class PutComponent implements OnInit  {
 
     let putUrl = this.methodData.url;
     const dataPath = this.methodData.dataPath;
-    putUrl = this.urlUtils.getParsedUrl(putUrl, this.rowData, dataPath);
+    putUrl = this.urlUtils.getParsedUrl(putUrl, this.rowData, dataPath,this.pageData.urlHost);
 
     actualMethod(putUrl, data, requestHeaders).subscribe(data => {
       this.loading = false;

@@ -26,9 +26,23 @@ export class UrlUtils {
         return url.replace(':' + fieldName, fieldValue);
     }
 
-    public getParsedUrl(url, data, dataPath) {
+    // public getParsedUrl(url, data, dataPath) {
+    //     const fieldName = this.extractIdFieldName(url);
+
+    //     console.log('detectedURL: ', location.host);
+        
+    //     const fieldValue = this.dataPathUtils.getFieldValueInPath(fieldName, dataPath, data);
+    //     if (fieldValue) {
+    //         url = this.getUrlWithReplacedId(url, fieldName, fieldValue);
+    //         return url;
+    //     }
+    // }
+
+
+    public getParsedUrl(url, data, dataPath,baseUrl) {
         const fieldName = this.extractIdFieldName(url);
 
+        url=url.replace(':urlHost/' , baseUrl + "/")
         console.log('detectedURL: ', location.host);
         
         const fieldValue = this.dataPathUtils.getFieldValueInPath(fieldName, dataPath, data);
@@ -37,7 +51,6 @@ export class UrlUtils {
             return url;
         }
     }
-
 
 
 }

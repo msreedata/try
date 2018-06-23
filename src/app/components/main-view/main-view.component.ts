@@ -78,7 +78,9 @@ export class MainViewComponent implements OnInit {
     }
 
     const dataPath = getMethod.dataPath;
-    getUrl = this.urlUtils.getParsedUrl(getUrl, defaultData, dataPath);
+    //replace base url with pageData url
+    
+    getUrl = this.urlUtils.getParsedUrl(getUrl, defaultData, dataPath,this.pageData.urlHost);
 
     console.log('Get single url', getUrl);
 

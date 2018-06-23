@@ -5,7 +5,7 @@
       "default": true,
       "name": "Foods",
       "id": "Foods",
-      "urlhost": "lindoce02:5001",
+      "urlHost": "lindoce02:5001",
       "description": "RESTful API Service client for .Net Core service",
       "methods": {
         "getAll": {
@@ -42,7 +42,7 @@
           }
         },
         "getSingle": {
-          "url": "https://:urlhost/api/v1/Foods/:Id",
+          "url": "https://:urlHost/api/v1/Foods/:Id",
           "dataPath": null,
           "queryParams": [],
           "requestHeaders": {}
