@@ -7,7 +7,7 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class ConfigurationService {
 
-    private readonly filePath: string = "config.json";
+    private readonly filePath: string = "src/config.json";
     private configuration;
     private configStream;
 
