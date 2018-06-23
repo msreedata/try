@@ -42,7 +42,7 @@
           }
         },
         "getSingle": {
-          "url": "https://lindoce02:5001/api/v1/Foods/:Id",
+          "url": "https://:urlhost/api/v1/Foods/:Id",
           "dataPath": null,
           "queryParams": [],
           "requestHeaders": {}
