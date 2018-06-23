@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-import { ToastrModule } from 'ng2-toastr/ng2-toastr';
+//import { ToastrModule } from 'ng2-toastr/ng2-toastr';
 import { ConfigurationService } from './services/configuraion.service';
 import { RequestsService } from './services/requests.service';
 import { MainViewModule } from './components/main-view/main-view.module';
@@ -13,6 +13,7 @@ import { Routing } from './app.routes';
 import {DataPathUtils} from './utils/dataPath.utils';
 import {UrlUtils} from './utils/url.utils';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [

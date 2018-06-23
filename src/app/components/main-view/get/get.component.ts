@@ -1,6 +1,7 @@
 import {Component, Input, Inject, Output, EventEmitter, ViewChild } from '@angular/core';
 import {FormGroup, FormControl, FormBuilder} from '@angular/forms';
-import { ToastrService } from 'toastr-ng2';
+//import { ToastrService } from 'toastr-ng2';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
