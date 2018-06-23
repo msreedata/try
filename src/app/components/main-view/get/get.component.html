@@ -67,7 +67,8 @@
       </td>
       <td *ngIf="showActions()">
         <div class="pure-button-group">
-          <button class="pure-button" [ngClass]="{hide: !pageData.methods.put}" (click)="onClickEdit(row)">
+          <button class="pure-button button-success button-xlarge" [ngClass]="{hide: !pageData.methods.put}" (click)="onClickEdit(row)">
+
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           </button>
           <button class="pure-button" [ngClass]="{hide: !pageData.methods.delete}" (click)="delete(row)">

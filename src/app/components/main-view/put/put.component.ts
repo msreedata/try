@@ -1,8 +1,8 @@
 import {Component, OnInit, Input, Inject, Output, EventEmitter} from '@angular/core';
 import {FormGroup, FormControl, FormBuilder} from '@angular/forms';
 import {DataPathUtils} from "../../../utils/dataPath.utils";
-import { ToastrService } from 'ngx-toastr';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'put-dialog',
