@@ -42,6 +42,7 @@ export class PostComponent implements OnInit {
 
   constructor(@Inject('RequestsService') private requestsService,
               @Inject('DataPathUtils') private dataPathUtils,
+              @Inject('UrlUtils') private urlUtils,
               private _fb: FormBuilder,
               private toastrService: ToastrService) { }
 
@@ -106,7 +107,9 @@ export class PostComponent implements OnInit {
       actualMethod = this.requestsService[actualMethodType].bind(this.requestsService);
     }
 
-    actualMethod(this.methodData.url, data, requestHeaders).subscribe(data => {
+    let postUrl = this.methodData.url;
+    postUrl = this.urlUtils.getParsedUrl(postUrl, null, null,this.pageData.urlHost);
+    actualMethod(postUrl, data, requestHeaders).subscribe(data => {
       this.loading = false;
       this.toastrService.success('Successfully created an item', 'Success');
       this.close(true);
