@@ -13,7 +13,8 @@ export class ConfigurationService {
 
     constructor(private http: Http) {
         this.configuration = null;
-        this.configStream = this.http.get(this.filePath).map(res => res.json());
+        this.configStream = this.http.get('assets/config.json');
+        //this.http.get(this.filePath).map(res => res.json());
         console.log('pg.1*********2');
     }
 
