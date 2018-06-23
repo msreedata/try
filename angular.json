@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "try": {
+    "restclient": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -126,5 +126,5 @@
       }
     }
   },
-  "defaultProject": "try"
+  "defaultProject": "restclient"
 }
