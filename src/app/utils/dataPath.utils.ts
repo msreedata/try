@@ -11,6 +11,7 @@ export class DataPathUtils {
       if (attr) {
         return data[attr];
       }
+      console.log('pg.1*********3',data,dataPath);
       return data;
     }
 
