@@ -7,11 +7,12 @@ export class DataPathUtils {
   }
 
   public extractDataFromResponse(data, dataPath, attr = null) {
+    console.log('pg.1*********3');
     if (!data || !dataPath) {
       if (attr) {
         return data[attr];
       }
-      console.log('pg.1*********3',data,dataPath);
+      console.log('pg.1*********4',data,dataPath);
       return data;
     }
 
