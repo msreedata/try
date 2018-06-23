@@ -5,7 +5,7 @@
       "default": true,
       "name": "Foods",
       "id": "Foods",
-      "description": "An example of RESTool configuration file usage with a simple mocking server",
+      "description": "RESTful API Service client for .Net Core service",
       "methods": {
         "getAll": {
           "label": "Get Food list",
