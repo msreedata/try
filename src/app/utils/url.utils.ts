@@ -31,7 +31,7 @@ export class UrlUtils {
         url=url.replace(':urlHost/' , baseUrl + "/")
         console.log('detectedURL: ', location.host);
 
-        if (dataPath) {
+        if (data) {
             const fieldName = this.extractIdFieldName(url);
             const fieldValue = this.dataPathUtils.getFieldValueInPath(fieldName, dataPath, data);
             if (fieldValue) {
