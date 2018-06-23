@@ -10,7 +10,7 @@
       "methods": {
         "getAll": {
           "label": "Get Food list",
-          "url": "https://lindoce02:5001/api/v1/Foods",
+          "url": "https://:urlHost/api/v1/Foods",
           "dataPath": "value",
           "queryParams": [
             {
@@ -48,7 +48,7 @@
           "requestHeaders": {}
         },
         "put": {
-          "url": "https://lindoce02:5001/api/v1/Foods/:Id",
+          "url": "https://:urlHost/api/v1/Foods/:Id",
           "actualMethod": "dd",
           "fields": [
             {
@@ -64,7 +64,7 @@
           ]
         },
         "post": {
-          "url": "https://lindoce02:5001/api/v1/Foods",
+          "url": "https://:urlHost/api/v1/Foods",
           "fields": [
             {
               "name": "Name",
@@ -79,7 +79,7 @@
           ]
         },
         "delete": {
-          "url": "https://lindoce02:5001/api/v1/Foods/:Id"
+          "url": "https://:urlHost/api/v1/Foods/:Id"
         }
       }
     }

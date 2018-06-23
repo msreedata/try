@@ -42,6 +42,7 @@ export class UrlUtils {
     public getParsedUrl(url, data, dataPath,baseUrl) {
         const fieldName = this.extractIdFieldName(url);
 
+        //url host replacement    
         url=url.replace(':urlHost/' , baseUrl + "/")
         console.log('detectedURL: ', location.host);
         
