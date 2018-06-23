@@ -24,13 +24,16 @@ export class DataPathUtils {
       if (typeof extractedData[prop] !== 'undefined') {
         extractedData = extractedData[prop];
       } else {
+        console.log('pg.1*********5',extractedData);
         return null;
       }
     }
 
     if (extractedData != null && attr) {
+      console.log('pg.1*********6',extractedData);
       return extractedData[attr];
     }
+    console.log('pg.1*********7',extractedData);
     return extractedData;
   }
 
