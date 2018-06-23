@@ -26,6 +26,8 @@ export class MainViewComponent implements OnInit {
               private route: ActivatedRoute,
               private router: Router,
               private toastrService: ToastrService) {
+
+                console.log('pg.1*********');
   }
 
   ngOnInit() {
